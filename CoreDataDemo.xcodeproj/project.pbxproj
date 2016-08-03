@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F61926C1D5106C0002BE963 /* bg_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F61926B1D5106C0002BE963 /* bg_image@3x.png */; };
+		1F61926E1D51077A002BE963 /* continue_btn_gray-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F61926D1D51077A002BE963 /* continue_btn_gray-2.png */; };
+		1F6192721D510806002BE963 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6192711D510806002BE963 /* MainViewController.m */; };
+		1F6192751D510879002BE963 /* FacultyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6192741D510879002BE963 /* FacultyViewController.m */; };
+		1F6192781D510C03002BE963 /* FacultyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6192771D510C03002BE963 /* FacultyTableViewCell.m */; };
+		1F61927D1D510D2C002BE963 /* FacultyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F61927C1D510D2C002BE963 /* FacultyDetailViewController.m */; };
 		1F6DDDD81D4FD625001742DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDDD71D4FD625001742DB /* main.m */; };
 		1F6DDDDB1D4FD625001742DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDDDA1D4FD625001742DB /* AppDelegate.m */; };
-		1F6DDDDE1D4FD625001742DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDDDD1D4FD625001742DB /* ViewController.m */; };
+		1F6DDDDE1D4FD625001742DB /* StudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDDDD1D4FD625001742DB /* StudentViewController.m */; };
 		1F6DDDE11D4FD625001742DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6DDDDF1D4FD625001742DB /* Main.storyboard */; };
 		1F6DDDE41D4FD625001742DB /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDDE21D4FD625001742DB /* CoreDataDemo.xcdatamodeld */; };
 		1F6DDDE61D4FD625001742DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6DDDE51D4FD625001742DB /* Assets.xcassets */; };
 		1F6DDDE91D4FD625001742DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6DDDE71D4FD625001742DB /* LaunchScreen.storyboard */; };
 		1F6DDDF41D4FD625001742DB /* CoreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDDF31D4FD625001742DB /* CoreDataDemoTests.m */; };
 		1F6DDDFF1D4FD625001742DB /* CoreDataDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDDFE1D4FD625001742DB /* CoreDataDemoUITests.m */; };
+		1F6DDE0E1D4FDC78001742DB /* StudentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDE0D1D4FDC78001742DB /* StudentTableViewCell.m */; };
+		1F6DDE111D4FDE98001742DB /* StudentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDE101D4FDE98001742DB /* StudentDetailViewController.m */; };
+		1F6DDE151D4FDF67001742DB /* header@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F6DDE141D4FDF67001742DB /* header@3x.png */; };
+		1F6DDE171D4FF0DF001742DB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6DDE161D4FF0DF001742DB /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +46,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F61926B1D5106C0002BE963 /* bg_image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_image@3x.png"; sourceTree = "<group>"; };
+		1F61926D1D51077A002BE963 /* continue_btn_gray-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "continue_btn_gray-2.png"; sourceTree = "<group>"; };
+		1F6192701D510806002BE963 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1F6192711D510806002BE963 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1F6192731D510879002BE963 /* FacultyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyViewController.h; sourceTree = "<group>"; };
+		1F6192741D510879002BE963 /* FacultyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyViewController.m; sourceTree = "<group>"; };
+		1F6192761D510C03002BE963 /* FacultyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyTableViewCell.h; sourceTree = "<group>"; };
+		1F6192771D510C03002BE963 /* FacultyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyTableViewCell.m; sourceTree = "<group>"; };
+		1F61927B1D510D2C002BE963 /* FacultyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyDetailViewController.h; sourceTree = "<group>"; };
+		1F61927C1D510D2C002BE963 /* FacultyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyDetailViewController.m; sourceTree = "<group>"; };
 		1F6DDDD31D4FD625001742DB /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6DDDD71D4FD625001742DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F6DDDD91D4FD625001742DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F6DDDDA1D4FD625001742DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F6DDDDC1D4FD625001742DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F6DDDDD1D4FD625001742DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F6DDDDC1D4FD625001742DB /* StudentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentViewController.h; sourceTree = "<group>"; };
+		1F6DDDDD1D4FD625001742DB /* StudentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentViewController.m; sourceTree = "<group>"; };
 		1F6DDDE01D4FD625001742DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F6DDDE31D4FD625001742DB /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
 		1F6DDDE51D4FD625001742DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +73,12 @@
 		1F6DDDFA1D4FD625001742DB /* CoreDataDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6DDDFE1D4FD625001742DB /* CoreDataDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoUITests.m; sourceTree = "<group>"; };
 		1F6DDE001D4FD625001742DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6DDE0C1D4FDC78001742DB /* StudentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTableViewCell.h; sourceTree = "<group>"; };
+		1F6DDE0D1D4FDC78001742DB /* StudentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTableViewCell.m; sourceTree = "<group>"; };
+		1F6DDE0F1D4FDE98001742DB /* StudentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentDetailViewController.h; sourceTree = "<group>"; };
+		1F6DDE101D4FDE98001742DB /* StudentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentDetailViewController.m; sourceTree = "<group>"; };
+		1F6DDE141D4FDF67001742DB /* header@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@3x.png"; sourceTree = "<group>"; };
+		1F6DDE161D4FF0DF001742DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6DDE171D4FF0DF001742DB /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +107,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F61926F1D5107E8002BE963 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1F61926D1D51077A002BE963 /* continue_btn_gray-2.png */,
+				1F61926B1D5106C0002BE963 /* bg_image@3x.png */,
+				1F6DDE141D4FDF67001742DB /* header@3x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		1F6192791D510CDE002BE963 /* StudentInformation */ = {
+			isa = PBXGroup;
+			children = (
+				1F6DDDDC1D4FD625001742DB /* StudentViewController.h */,
+				1F6DDDDD1D4FD625001742DB /* StudentViewController.m */,
+				1F6DDE0C1D4FDC78001742DB /* StudentTableViewCell.h */,
+				1F6DDE0D1D4FDC78001742DB /* StudentTableViewCell.m */,
+				1F6DDE0F1D4FDE98001742DB /* StudentDetailViewController.h */,
+				1F6DDE101D4FDE98001742DB /* StudentDetailViewController.m */,
+			);
+			name = StudentInformation;
+			sourceTree = "<group>";
+		};
+		1F61927A1D510CF6002BE963 /* Faculty Information */ = {
+			isa = PBXGroup;
+			children = (
+				1F6192731D510879002BE963 /* FacultyViewController.h */,
+				1F6192741D510879002BE963 /* FacultyViewController.m */,
+				1F6192761D510C03002BE963 /* FacultyTableViewCell.h */,
+				1F6192771D510C03002BE963 /* FacultyTableViewCell.m */,
+				1F61927B1D510D2C002BE963 /* FacultyDetailViewController.h */,
+				1F61927C1D510D2C002BE963 /* FacultyDetailViewController.m */,
+			);
+			name = "Faculty Information";
+			sourceTree = "<group>";
+		};
 		1F6DDDCA1D4FD625001742DB = {
 			isa = PBXGroup;
 			children = (
+				1F6DDE161D4FF0DF001742DB /* CoreData.framework */,
 				1F6DDDD51D4FD625001742DB /* CoreDataDemo */,
 				1F6DDDF21D4FD625001742DB /* CoreDataDemoTests */,
 				1F6DDDFD1D4FD625001742DB /* CoreDataDemoUITests */,
@@ -103,16 +167,19 @@
 		1F6DDDD51D4FD625001742DB /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F61927A1D510CF6002BE963 /* Faculty Information */,
+				1F6192791D510CDE002BE963 /* StudentInformation */,
+				1F61926F1D5107E8002BE963 /* Images */,
 				1F6DDDD91D4FD625001742DB /* AppDelegate.h */,
 				1F6DDDDA1D4FD625001742DB /* AppDelegate.m */,
-				1F6DDDDC1D4FD625001742DB /* ViewController.h */,
-				1F6DDDDD1D4FD625001742DB /* ViewController.m */,
 				1F6DDDDF1D4FD625001742DB /* Main.storyboard */,
 				1F6DDDE51D4FD625001742DB /* Assets.xcassets */,
 				1F6DDDE71D4FD625001742DB /* LaunchScreen.storyboard */,
 				1F6DDDEA1D4FD625001742DB /* Info.plist */,
 				1F6DDDE21D4FD625001742DB /* CoreDataDemo.xcdatamodeld */,
 				1F6DDDD61D4FD625001742DB /* Supporting Files */,
+				1F6192701D510806002BE963 /* MainViewController.h */,
+				1F6192711D510806002BE963 /* MainViewController.m */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -246,9 +313,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6DDE151D4FDF67001742DB /* header@3x.png in Resources */,
+				1F61926E1D51077A002BE963 /* continue_btn_gray-2.png in Resources */,
 				1F6DDDE91D4FD625001742DB /* LaunchScreen.storyboard in Resources */,
 				1F6DDDE61D4FD625001742DB /* Assets.xcassets in Resources */,
 				1F6DDDE11D4FD625001742DB /* Main.storyboard in Resources */,
+				1F61926C1D5106C0002BE963 /* bg_image@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6DDDDE1D4FD625001742DB /* ViewController.m in Sources */,
+				1F6DDDDE1D4FD625001742DB /* StudentViewController.m in Sources */,
+				1F6192751D510879002BE963 /* FacultyViewController.m in Sources */,
 				1F6DDDE41D4FD625001742DB /* CoreDataDemo.xcdatamodeld in Sources */,
 				1F6DDDDB1D4FD625001742DB /* AppDelegate.m in Sources */,
+				1F6DDE0E1D4FDC78001742DB /* StudentTableViewCell.m in Sources */,
+				1F6192721D510806002BE963 /* MainViewController.m in Sources */,
 				1F6DDDD81D4FD625001742DB /* main.m in Sources */,
+				1F6192781D510C03002BE963 /* FacultyTableViewCell.m in Sources */,
+				1F61927D1D510D2C002BE963 /* FacultyDetailViewController.m in Sources */,
+				1F6DDE111D4FDE98001742DB /* StudentDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +576,7 @@
 				1F6DDE051D4FD625001742DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6DDE061D4FD625001742DB /* Build configuration list for PBXNativeTarget "CoreDataDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +585,7 @@
 				1F6DDE081D4FD625001742DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6DDE091D4FD625001742DB /* Build configuration list for PBXNativeTarget "CoreDataDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +594,7 @@
 				1F6DDE0B1D4FD625001742DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
