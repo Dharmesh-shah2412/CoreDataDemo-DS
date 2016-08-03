@@ -13,13 +13,16 @@
 
 
 @interface FacultyViewController ()
-
+{
+    NSIndexPath *strIndex;
+}
 @end
 
 @implementation FacultyViewController
 
 - (void)viewDidLoad
 {
+    strIndex = 0;
     [super viewDidLoad];
     filteredArray=[[NSMutableArray alloc]init];
 }
@@ -121,6 +124,7 @@
 //}
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"index path is:%ld",(long)indexPath.row);
     NSManagedObjectContext *context = [self managedObjectContext];
     
     UITableViewRowAction *delete = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Delete" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath)
@@ -139,10 +143,20 @@
     
     UITableViewRowAction *more = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Edit " handler:^(UITableViewRowAction *action, NSIndexPath *indexPath)
         {
-            [self performSegueWithIdentifier:@"Update" sender:self];
+            strIndex = indexPath;
+            [self navMethod];
         }];
     more.backgroundColor = [UIColor colorWithRed:0.188 green:0.514 blue:0.984 alpha:1];
     return @[delete, more];
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    NSManagedObject *selectedDevice = [self.facultyArray objectAtIndex:indexPath.row];
+    FacultyDetailViewController  *objviewController =(FacultyDetailViewController *) [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"FacultyDetailViewController"];
+    objviewController.device = selectedDevice;
+    [self.navigationController pushViewController:objviewController animated:YES];
+
 }
 #pragma mark Searchbar Delegates Method
 
@@ -154,7 +168,6 @@
 
         NSArray *tempAry = [self.facultyArray filteredArrayUsingPredicate:myPredicate];
         filteredArray = [NSMutableArray arrayWithArray: tempAry];
-        NSLog(@"%@",self.facultyArray);
 
      }
 }
@@ -184,14 +197,16 @@
     NSLog(@"Search Clicked");
     [self searchTableList];
 }
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+
+-(void)navMethod
 {
-    if ([[segue identifier] isEqualToString:@"Update"]) {
-        NSManagedObject *selectedDevice = [self.facultyArray objectAtIndex:[[self.tblView indexPathForSelectedRow] row]];
-        FacultyDetailViewController *destViewController = segue.destinationViewController;
-        destViewController.device = selectedDevice;
-    }
+    NSManagedObject *selectedDevice = [self.facultyArray objectAtIndex:strIndex.row];
+    FacultyDetailViewController  *objviewController =(FacultyDetailViewController *) [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"FacultyDetailViewController"];
+    
+    objviewController.device = selectedDevice;
+    [self.navigationController pushViewController:objviewController animated:YES];
 }
+
 - (IBAction)btnBack:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];

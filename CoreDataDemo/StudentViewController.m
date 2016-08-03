@@ -12,7 +12,9 @@
 #import "StudentDetailViewController.h"
 
 @interface StudentViewController ()
-
+{
+    NSIndexPath *strIndex;
+}
 @end
 
 @implementation StudentViewController
@@ -20,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     filteredArray=[[NSMutableArray alloc]init];
-
+    strIndex=0;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -139,12 +141,22 @@
     
     UITableViewRowAction *more = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Edit " handler:^(UITableViewRowAction *action, NSIndexPath *indexPath)
         {
-            [self performSegueWithIdentifier:@"Update" sender:self];
+//            [self performSegueWithIdentifier:@"Update" sender:self];
+            strIndex=indexPath;
+            [self navMethod];
         }];
     more.backgroundColor = [UIColor colorWithRed:0.188 green:0.514 blue:0.984 alpha:1];
     
     return @[delete, more];
     
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSManagedObject *selectedDevice = [self.devices objectAtIndex:indexPath.row];
+    StudentDetailViewController  *objviewController =(StudentDetailViewController *) [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"StudentDetailViewController"];
+    
+    objviewController.device = selectedDevice;
+    [self.navigationController pushViewController:objviewController animated:YES];
 }
 #pragma mark Searchbar Delegates Method
 
@@ -186,15 +198,23 @@
     NSLog(@"Search Clicked");
     [self searchTableList];
 }
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+-(void)navMethod
 {
-    if ([[segue identifier] isEqualToString:@"Update"]) {
-        NSManagedObject *selectedDevice = [self.devices objectAtIndex:[[self.tblview indexPathForSelectedRow] row]];
-        StudentDetailViewController *destViewController = segue.destinationViewController;
-        destViewController.device = selectedDevice;
-    }
+    NSManagedObject *selectedDevice = [self.devices objectAtIndex:strIndex.row];
+    StudentDetailViewController  *objviewController =(StudentDetailViewController *) [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"StudentDetailViewController"];
+    
+    objviewController.device = selectedDevice;
+    [self.navigationController pushViewController:objviewController animated:YES];
 }
+
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([[segue identifier] isEqualToString:@"Update"]) {
+//        NSManagedObject *selectedDevice = [self.devices objectAtIndex:[[self.tblview indexPathForSelectedRow] row]];
+//        StudentDetailViewController *destViewController = segue.destinationViewController;
+//        destViewController.device = selectedDevice;
+//    }
+//}
 - (IBAction)btnBack:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];

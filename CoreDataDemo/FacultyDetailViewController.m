@@ -39,6 +39,7 @@
 }
 
 - (IBAction)btnCancel:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
     [self dismissViewControllerAnimated:YES completion:nil];
 
 }
@@ -121,6 +122,8 @@
             [newDevice setValue:self.txtFname.text forKey:@"facultyname"];
             [newDevice setValue:self.txtFContactNo.text forKey:@"contactno"];
         }
+        
+        [self.navigationController popViewControllerAnimated:YES];
         [self dismissViewControllerAnimated:YES completion:nil];
         NSError *error = nil;
         // Save the object to persistent store
@@ -131,9 +134,4 @@
     }
 
 }
-//- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
-//{
-//    [textField resignFirstResponder];
-//    return YES;
-//}
 @end

@@ -18,7 +18,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0M8-Dd-fF1">
-                                <rect key="frame" x="276" y="15" width="38.000000185779136" height="30"/>
+                                <rect key="frame" x="276.0000002494026" y="15" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Add"/>
@@ -104,7 +104,6 @@
                                             <outlet property="lblDept" destination="aVD-5K-Bpw" id="kFn-S8-tDb"/>
                                             <outlet property="lblEnmentNo" destination="C8c-fa-tbL" id="s2N-O8-WzV"/>
                                             <outlet property="lblstudentname" destination="RYA-sg-w0I" id="nc9-CU-5b4"/>
-                                            <segue destination="I2K-p8-MBH" kind="modal" identifier="Update" id="O4z-3g-s8p"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -133,6 +132,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9wy-6z-PUh"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="searchbar" destination="GAb-c3-n2p" id="Pol-aX-xyb"/>
                         <outlet property="tblview" destination="8Nu-TL-Usl" id="dmf-PJ-jDy"/>
@@ -140,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="-130"/>
+            <point key="canvasLocation" x="1215" y="-130"/>
         </scene>
         <!--Faculty Detail View Controller-->
         <scene sceneID="2bM-sm-3G6">
@@ -221,12 +223,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNR-QJ-3V4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280" y="-881"/>
+            <point key="canvasLocation" x="1812" y="-881"/>
         </scene>
         <!--Student Detail View Controller-->
         <scene sceneID="YUM-BO-Pe5">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I2K-p8-MBH" customClass="StudentDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StudentDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I2K-p8-MBH" customClass="StudentDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="je9-a1-q8i">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7u7-8K-8yJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="-130"/>
+            <point key="canvasLocation" x="1806" y="-130"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="PcI-cf-KIr">
@@ -333,7 +335,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Faculty Information" backgroundImage="continue_btn_gray-2.png"/>
                                 <connections>
-                                    <segue destination="fvg-ND-VkR" kind="modal" id="W4L-dB-gqy"/>
+                                    <segue destination="INP-6m-ySl" kind="modal" id="W4L-dB-gqy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wAL-uv-X70">
@@ -341,7 +343,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Student Information" backgroundImage="continue_btn_gray-2.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="modal" id="ylR-y1-xbM"/>
+                                    <segue destination="0oA-BQ-uGt" kind="modal" id="ylR-y1-xbM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -365,7 +367,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="efd-jw-8fe">
-                                <rect key="frame" x="276" y="15" width="38" height="30"/>
+                                <rect key="frame" x="276.00000008940702" y="15" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Add"/>
@@ -412,7 +414,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="38" sectionHeaderHeight="28" sectionFooterHeight="28" id="oIJ-Oc-09h">
-                                <rect key="frame" x="0.0" y="144.00000009305182" width="320" height="417"/>
+                                <rect key="frame" x="0.0" y="144.00000018726476" width="320" height="417"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -450,7 +452,6 @@
                                             <outlet property="lblFContact" destination="QXc-LP-4F8" id="uDL-gv-bXL"/>
                                             <outlet property="lblFDept" destination="gdB-cb-xkO" id="coM-Rg-nq2"/>
                                             <outlet property="lblFname" destination="8O9-If-cDi" id="f7u-qw-XVA"/>
-                                            <segue destination="quA-St-bVt" kind="modal" identifier="Update" id="uvG-ee-7Z8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -479,6 +480,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rdz-31-AEQ"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="searchbar" destination="tcH-LM-iLl" id="Cr0-tR-Dof"/>
                         <outlet property="tblView" destination="oIJ-Oc-09h" id="e2B-fw-9zV"/>
@@ -486,7 +490,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWG-1g-CPe" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1215" y="-881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sx3-kp-NVm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="INP-6m-ySl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PIK-0X-E8K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fvg-ND-VkR" kind="relationship" relationship="rootViewController" id="CHj-g0-nUP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysS-YT-Vz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="683" y="-881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x5X-x7-yKw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0oA-BQ-uGt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Eh-4y-h5b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IDM-lS-58l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgW-8E-yl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="683" y="-130"/>
         </scene>
     </scenes>
     <resources>
@@ -494,8 +538,4 @@
         <image name="continue_btn_gray-2.png" width="210" height="54"/>
         <image name="header.png" width="414" height="57"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="O4z-3g-s8p"/>
-        <segue reference="uvG-ee-7Z8"/>
-    </inferredMetricsTieBreakers>
 </document>

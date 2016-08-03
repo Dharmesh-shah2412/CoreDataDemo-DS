@@ -107,6 +107,7 @@
             [newDevice setValue:self.txtEnrollNo.text forKey:@"enrollmentno"];
         }
         [self dismissViewControllerAnimated:YES completion:nil];
+        [self.navigationController popViewControllerAnimated:YES];
         NSError *error = nil;
         // Save the object to persistent store
         if (![context save:&error])
@@ -117,7 +118,9 @@
 }
 - (IBAction)btnCancel:(id)sender
 {
+    [self.navigationController popViewControllerAnimated:YES];
     [self dismissViewControllerAnimated:YES completion:nil];
+
 }
 - (NSManagedObjectContext *)managedObjectContext
 {
